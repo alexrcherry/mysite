@@ -1,0 +1,16 @@
+<h1>{{ sensor.sensor_name }}</h1>
+
+<ul>
+{% if sensor.measurement_set.all|length %}
+
+    {% for measurement in sensor.measurement_set.all %}
+        <p>{{ measurement.date_time }} --- {{ measurement.value }} </p>
+    {% endfor %}
+
+{% else %}
+    <p>No measurements</p>
+{% endif %}
+
+
+</ul>
+

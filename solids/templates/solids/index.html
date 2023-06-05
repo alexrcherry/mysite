@@ -1,0 +1,10 @@
+<h1>Sensors</h1>
+{% if sensor_list %}
+    <ul>
+    {% for sensor in sensor_list %}
+        <li><a href="/solids/{{ sensor.id }}/">{{ sensor.sensor_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No sensors are configured.</p>
+{% endif %}

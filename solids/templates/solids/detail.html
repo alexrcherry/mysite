@@ -1,0 +1,6 @@
+<h1>{{ sensor.sensor_name }}</h1>
+<p>{{ sensor.sensor_description|linebreaksbr}}</p>
+
+<form action="{% url 'solids:measure' sensor.id %}" method="post">
+    <input type="submit" value="Measure">
+</form>

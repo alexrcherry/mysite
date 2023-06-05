@@ -1,0 +1,164 @@
+{% load static %}
+{% load bootstrap_customizer %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Projects</title>
+    <link rel="icon" type="image/svg+xml" sizes="any"        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 100%22><text y=%22.9em%22 font-size=%22100%22>🍒</text></svg>"/>
+    <style lang="css">
+      {% bootstrap_theme_css_above_the_fold %}
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">🍒</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hire Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="p-5 text-center">
+        <h1 class="mb-3">Projects</h1>
+        <h4 class="mb-3">In various stages of completion</h4>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row">
+        <div class="card-deck">
+
+            <div class="card bg-light mb-4" style="min-width: 18rem; max-width: 18rem">
+                <img src="{% static "portfolio/images/L1.jpg" %}" alt="Card image" class="rounded-top">
+                <div class="card-body">
+                  <h4 class="card-title">L1 Rocket</h4>
+                  <p class="card-text">
+                    Scratch built solid state rocket to get Tripoli L1 certification
+                  </p>
+                  <button type="button" class="btn btn-outline-primary">Details</button>
+                </div>
+            </div>
+
+            <div class="card bg-light mb-4" style="min-width: 18rem; max-width: 18rem">
+                <img src="{% static "portfolio/images/casing.jpg" %}" alt="Card image" class="rounded-top">
+                <div class="card-body">
+                  <h4 class="card-title">Experimental Solid Rocket Motor</h4>
+                  <p class="card-text">
+                    Solid rocket motor made with a fiber wound casing
+                  </p>
+                  <button type="button" class="btn btn-outline-primary">Details</button>
+                </div>
+            </div>
+
+            <div class="card bg-light mb-4" style="min-width: 18rem; max-width: 18rem">
+                <img src="{% static "portfolio\images\halfcat.jpg" %}" alt="Card image" class="rounded-top">
+                <div class="card-body">
+                  <h4 class="card-title">Liquid Rocket</h4>
+                  <p class="card-text">
+                    Isopropyl/Nitrous bipropellant rocket
+                  </p>
+                  <button type="button" class="btn btn-outline-primary">Details</button>
+                </div>
+            </div>
+
+            <div class="card bg-light mb-4" style="min-width: 18rem; max-width: 18rem">
+                <img src="{% static "portfolio/images/control.jpg" %}" alt="Card image" class="rounded-top">
+                <div class="card-body">
+                  <h4 class="card-title">Active Control Flight Computer</h4>
+                  <p class="card-text">
+                    PCB designed to measure rocket state and control canards
+                  </p>
+                  <button type="button" class="btn btn-outline-primary">Details</button>
+                </div>
+            </div>
+
+            <div class="card bg-light mb-4" style="min-width: 18rem; max-width: 18rem">
+                <img src="{% static "portfolio\images\canard.jpg" %}" alt="Card image" class="rounded-top">
+                <div class="card-body">
+                  <h4 class="card-title">Canards</h4>
+                  <p class="card-text">
+                    Control surfaces to stabalize a rocket
+                  </p>
+                  <button type="button" class="btn btn-outline-primary">Details</button>
+                </div>
+            </div>
+
+            <div class="card bg-light mb-4" style="min-width: 18rem; max-width: 18rem">
+                <img src="{% static "portfolio\images\Electroforming.jpg" %}" alt="Card image" class="rounded-top">
+                <div class="card-body">
+                  <h4 class="card-title">Electroforming</h4>
+                  <p class="card-text">
+                    Experimental method for producing ultra cheap rocket nozzles
+                  </p>
+                  <button type="button" class="btn btn-outline-primary">Details</button>
+                </div>
+            </div>
+
+            <div class="card bg-light mb-4" style="min-width: 18rem; max-width: 18rem">
+                <img src="{% static "polls/images/emg.png" %}" alt="Card image" class="rounded-top">
+                <div class="card-body">
+                  <h4 class="card-title">Rocket Ground Systems GUI</h4>
+                  <p class="card-text">
+                    A simple python GUI for reading sensors and actuating solenoids on a large liquid rocket
+                  </p>
+                  <button type="button" class="btn btn-outline-primary">Details</button>
+                </div>
+            </div>
+
+            <div class="card bg-light mb-4" style="min-width: 18rem; max-width: 18rem">
+                <img src="{% static "portfolio/images/lathe.jpg" %}" alt="Card image" class="rounded-top">
+                <div class="card-body">
+                  <h4 class="card-title">Mini Machine Shop</h4>
+                  <p class="card-text">
+                    Cheap craiglist mill converted to cnc
+                  </p>
+                  <button type="button" class="btn btn-outline-primary">Details</button>
+                </div>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
